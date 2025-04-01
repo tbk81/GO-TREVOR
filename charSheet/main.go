@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	return
+	t1 := travelerProfile{}
+	travelerMaker(t1)
+	fmt.Println("Your name is", t1.name)
 }
 
 type travelerProfile struct {
@@ -17,9 +19,9 @@ type travelerProfile struct {
 }
 
 func travelerMaker(t travelerProfile) {
-	traveler :=
-		fmt.Println("Type name: ")
+	fmt.Print("Type name: ")
 	fmt.Scanln(&t.name)
+	// fmt.Println("Your name is", t.name)
 }
 
 /*
